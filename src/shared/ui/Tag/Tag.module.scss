@@ -1,0 +1,14 @@
+.Tag {
+    border: 1px solid rgb(193, 193, 203);
+    border-radius: 10px;
+    padding: 5px 20px;
+    color: var(--gray-color);
+    width: max-content;
+    font-weight: 300;
+}
+
+@media (max-width: 450px) {
+    .Tag {
+        padding: 2px 5px;
+    }
+}

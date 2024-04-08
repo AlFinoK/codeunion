@@ -1,0 +1,36 @@
+.Button {
+    cursor: pointer;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+}
+
+.primary {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    padding: 0.5rem 1rem;
+    background: rgb(50, 192, 118);
+    transition: background 0.2s;
+    &:hover {
+        background: rgb(40, 160, 98);
+    }
+}
+.clear {
+    color: rgb(66, 79, 94);
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: visible;
+    background: none;
+}
+
+.disabled {
+    opacity: 0.5;
+}

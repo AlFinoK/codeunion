@@ -1,0 +1,34 @@
+.OverflowMenu {
+    svg {
+        cursor: pointer;
+    }
+    position: relative;
+}
+
+.popup {
+    position: absolute;
+    right: 100%;
+    border-radius: 15px;
+    box-shadow: -30px 30px 50px 0px rgba(28, 28, 30, 0.1);
+    background: rgb(249, 250, 251);
+    padding: 20px;
+    min-width: max-content;
+    z-index: 10;
+    .popupBtns {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .btn {
+        transition-duration: color 0.2s;
+        &:hover {
+            color: rgb(148, 148, 160);
+        }
+    }
+}
+
+.removeModal {
+    p {
+        font-size: 21px;
+    }
+}

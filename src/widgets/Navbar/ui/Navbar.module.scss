@@ -1,0 +1,80 @@
+.navbar {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    padding: 0 1rem;
+    color: var(--inverted-primary-color);
+    background: var(--primary-bg-color);
+    border-bottom: 1px solid rgb(213, 213, 213);
+}
+
+.logo {
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+
+    svg {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    span {
+        font-size: 2.5rem;
+        color: var(--inverted-primary-color);
+    }
+}
+
+.addUser {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.modal {
+    text-align: center;
+    button {
+        width: 70%;
+        font-size: 18px;
+    }
+    input {
+        width: 100%;
+    }
+    span {
+        font-size: 20px;
+        max-width: 70%;
+    }
+}
+.inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.modalTitle {
+    color: var(--primary-color);
+    font: inherit;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 901px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        height: 12rem;
+        border-bottom: none;
+    }
+    .addUser {
+        flex-direction: column;
+        margin-bottom: 20px;
+        width: 100%;
+        button {
+            width: 100%;
+        }
+    }
+}

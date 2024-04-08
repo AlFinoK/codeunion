@@ -1,0 +1,36 @@
+/* stylelint-disable no-descending-specificity */
+.ThemeSwitcher {
+    background: none;
+
+    path {
+        transition: all 0.3s;
+    }
+}
+
+.ThemeSwitcher:hover {
+    background: none;
+    path {
+        fill: yellow;
+        stroke: yellow;
+    }
+}
+
+.light,
+.dark {
+    width: 3rem;
+    height: 3rem;
+}
+
+.light {
+    path {
+        fill: var(--primary-color);
+        stroke: var(--primary-color);
+    }
+}
+
+.dark {
+    path {
+        fill: var(--primary-color);
+        stroke: var(--primary-color);
+    }
+}
