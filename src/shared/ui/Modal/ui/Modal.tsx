@@ -24,8 +24,8 @@ export const Modal = (props: ModalProps) => {
     const { theme } = useTheme()
 
     const mods: Record<string, boolean> = {
-        [s.opened]: isOpen,
-        [s.isClosing]: isClosing,
+        [s.opened]: !!isOpen,
+        [s.isClosing]: !!isClosing,
     }
 
     const closeHandler = useCallback(() => {

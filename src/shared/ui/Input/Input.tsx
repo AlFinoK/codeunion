@@ -1,6 +1,6 @@
-import { memo, InputHTMLAttributes, ChangeEvent, useState, useEffect, useRef } from 'react'
+import { memo, InputHTMLAttributes, useEffect, useRef } from 'react'
 
-import { classNames } from 'shared/lib/classNames'
+import { Mods, classNames } from 'shared/lib/classNames'
 import s from './Input.module.scss'
 
 export enum InputTheme {
@@ -38,10 +38,13 @@ export const Input = memo((props: InputProps) => {
         }
     }, [autofocus])
 
+    const mods: Mods = {
+        [s.theme]: true,
+    }
     return (
         <div className={s.inputBox}>
             <input
-                className={classNames(s.Input, { [s[theme]]: true })}
+                className={classNames(s.Input, mods)}
                 ref={inputRef}
                 type={type}
                 placeholder={placeholder}

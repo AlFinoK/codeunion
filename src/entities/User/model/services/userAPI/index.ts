@@ -17,7 +17,7 @@ export const userAPI = createApi({
                     limit,
                 },
             }),
-            providesTags: (result) => ['User'],
+            providesTags: () => ['User'],
         }),
         createUser: builder.mutation<IUser, IUser>({
             query: (user) => ({

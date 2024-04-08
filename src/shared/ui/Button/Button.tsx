@@ -1,5 +1,5 @@
 import { type ButtonHTMLAttributes, type FC } from 'react'
-import { classNames } from 'shared/lib/classNames'
+import { Mods, classNames } from 'shared/lib/classNames'
 import s from './Button.module.scss'
 
 export enum ButtonTheme {
@@ -16,10 +16,12 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 export const Button: FC<ButtonProps> = (props) => {
     const { className, children, theme, disabled, ...otherProps }: ButtonProps = props
 
-    const mods: Record<string, boolean> = {
+    const mods: Mods = {
+        // @ts-ignore
         [s[theme]]: true,
         [s.disabled]: disabled,
     }
+
     return (
         <button className={classNames(s.Button, mods, [className])} {...otherProps} disabled={disabled} type="button">
             {children}

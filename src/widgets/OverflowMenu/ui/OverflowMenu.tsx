@@ -2,7 +2,7 @@ import { classNames } from 'shared/lib/classNames'
 import Settings from 'shared/assets/icons/settings.svg?react'
 import { Button, ButtonTheme } from 'shared/ui/Button/Button'
 import { MouseEventHandler, useEffect, useRef, useState } from 'react'
-import { IUser, getUserData } from 'entities/User'
+import { IUser } from 'entities/User'
 import { Modal } from 'shared/ui/Modal'
 import s from './OverflowMenu.module.scss'
 
